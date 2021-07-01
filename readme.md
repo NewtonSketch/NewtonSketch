@@ -1,14 +1,15 @@
-#Newton Sketch: Estimating Node Intimacy in Dynamic GraphsUsing Newton’s Law of Cooling
+
+# Newton Sketch: Estimating Node Intimacy in Dynamic GraphsUsing Newton’s Law of Cooling
 
 
 
-##element.h
+## element.h
 
 struct: src，dst，Intimacy
 
 
 
-##sketch_cu/cm.h
+## sketch_cu/cm.h
 
 initial: sketch(int sz,int hash):
 
@@ -20,7 +21,7 @@ query: query(int src,int dst,int nowtime): return the intimacy of (src,dst) at n
 
 
 
-##sketch+heap_cu/cm.h
+## sketch+heap_cu/cm.h
 
 initial: skeheap(int topk,int sz,int hash):
 
@@ -32,9 +33,7 @@ insert: insert(int src,int dst,int nowtime): insert an edge (src,dst) at nowtime
 
 query: query(int nowtime,vector<element>&result):  return topk edges in the sketch
 
-
-
-##SpaceSaving
+## SpaceSaving.h
 
 initial: SpaceSaving(int sz,int cell,int topk): 
 
